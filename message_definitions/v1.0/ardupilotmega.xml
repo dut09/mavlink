@@ -1197,6 +1197,16 @@
       <field type="uint8_t" name="custom_len">Custom Byte Length</field>
       <field type="uint8_t[24]" name="custom_bytes">Custom Bytes</field>
     </message>
+    <!-- 187 to 190 are reserved for vicon data. -->
+    <message id="187" name="VICON">
+      <description>Send Vicon location and orientation information to the board</description>
+      <field type="float" name="x" units="mm">Position x (north)</field>
+      <field type="float" name="y" units="mm">Position y (east)</field>
+      <field type="float" name="z" units="mm">Position z (down)</field>
+      <field type="float" name="roll" units="rad">Roll angle (rad)</field>
+      <field type="float" name="pitch" units="rad">Pitch angle (rad)</field>
+      <field type="float" name="yaw" units="rad">Yaw angle (rad)</field>
+    </message>
     <message id="191" name="MAG_CAL_PROGRESS">
       <description>Reports progress of compass calibration.</description>
       <field type="uint8_t" name="compass_id">Compass being calibrated</field>
