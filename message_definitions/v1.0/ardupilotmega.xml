@@ -1206,6 +1206,12 @@
       <field type="float" name="roll" units="rad">Roll angle (rad)</field>
       <field type="float" name="pitch" units="rad">Pitch angle (rad)</field>
       <field type="float" name="yaw" units="rad">Yaw angle (rad)</field>
+      <field type="float" name="vx" units="mm">Velocity x (north)</field>
+      <field type="float" name="vy" units="mm">Velocity y (east)</field>
+      <field type="float" name="vz" units="mm">Velocity z (down)</field>
+      <field type="float" name="vroll" units="rad">Roll angular rate (rad)</field>
+      <field type="float" name="vpitch" units="rad">Pitch angular rate (rad)</field>
+      <field type="float" name="vyaw" units="rad">Yaw angular rate (rad)</field>
     </message>
     <message id="191" name="MAG_CAL_PROGRESS">
       <description>Reports progress of compass calibration.</description>
